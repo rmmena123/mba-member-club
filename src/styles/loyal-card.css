@@ -7,5 +7,42 @@
     display: flex;
     align-items: center;
     gap: var(--space-base);
+
+    & .card-info {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-min);
+      width: 10rem;
+    }
+
+    & .card-id {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-min) var(--space-sm);
+
+      border-radius: var(--border-radius-full, 999px);
+      background: var(--base---gray-300);
+    }
+  }
+
+  & .card-points {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--space-sm);
+    width: 100%;
+
+    & .item-check {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3.5rem;
+      height: 3.5rem;
+      padding: var(--space-sm);
+
+      border-radius: var(--border-radius-sm);
+      background: var(--base---gray-200);
+      backdrop-filter: blur(3.15px);
+    }
   }
 }
