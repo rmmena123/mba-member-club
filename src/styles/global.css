@@ -1,11 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
-  font-family: "Oxygen", sans-serif;
   --main---pink: #d658b3;
   --main---green: #45b442;
   --base---white: #ffffff;
@@ -16,13 +9,95 @@
   --base---gray-500: #756c71;
   --base---gray-600: #4a4448;
   --base---gray-700: #332b31;
-  --gradient-base: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%)
+  --gradient-base: linear-gradient(
+    90deg,
+     #2DAA6E 0%,
+     #2DAAAA 33.33%,
+     #856CCF 66.67%,
+     #D658B3 100%
+  );
 
-  --heading---title--md: 1.5rem;
-  --heading---title--sm: 1.125rem;
-  --heading---subtitle--md: 0.875rem;
-  --heading---subtitle--sm: 0.75rem;
-  --body---text--md: 1rem;
-  --body---text--sm: 0.875rem;
-  --body---text--xs: 0.75rem;
+  --ff-sans: "Oxygen", sans-serif;
+
+  --fs-heading---title--md: 1.5rem;
+  --fs-heading---title--sm: 1.125rem;
+  --fs-heading---subtitle--md: 0.875rem;
+  --fs-heading---subtitle--sm: 0.75rem;
+  --fs-body---text--md: 1rem;
+  --fs-body---text--sm: 0.875rem;
+  --fs-body---text--xs: 0.75rem;
+
+  --fw-base: 400;
+  --fw-bold: 700;
+
+  --line-height-base: 140%;
+
+  --space-none: 0;
+  --space-min: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.75rem;
+  --space-base: 1rem;
+  --space-lg: 1.25rem;
+  --space-xl: 1.5rem;
+  --space-2xl: 2rem;
+  --spacec-3xl: 4rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: var(--space-none);
+  padding: var(--space-none);
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-base);
+  font-size: var(--fs-body---text--md);
+  line-height: var(--line-height-base);
+  color: var(--base---gray-500);
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--base---gray-200);
+  overflow-x: hidden;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.container {
+  --max-width: 350px;
+  width: min(var(--max-width), 100% - var(--space-md) * 2);
+  margin-inline: auto;
+  border: 1px solid blue;
+}
+
+@media (width >= 62em) {
+  .container {
+    --max-width: 912px;
+    border: 1px solid red;
+  }
 }
