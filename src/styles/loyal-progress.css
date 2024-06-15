@@ -1,0 +1,47 @@
+.loyalty-progress {
+  gap: var(--space-xl);
+  padding: var(--space-base) var(--space-lg);
+
+  & .progress-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-min);
+  }
+
+  & .progress-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+
+    & progress,
+    & progress::-webkit-progress-bar,
+    & progress::-webkit-progress-value {
+      border-radius: var(--border-radius-full);
+    }
+
+    & progress {
+      width: 11rem;
+      height: 0.5rem;
+    }
+
+    & progress::-webkit-progress-bar {
+      background: var(--base---gray-300);
+    }
+
+    & progress::-webkit-progress-value {
+      background: var(--gradient-base);
+    }
+  }
+
+  & .gift-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: var(--space-sm);
+
+    border-radius: var(--border-radius-full);
+    background: var(--base---gray-200);
+  }
+}
