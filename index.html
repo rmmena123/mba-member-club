@@ -9,12 +9,25 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
     <title>Member Club</title>
   </head>
   <body>
     <header class="container">
-      <h1>Member Club</h1>
+      <img src="./src/assets/Logo.png" alt="Logo Member Club" class="logo" />
+
+      <form class="form">
+        <input
+          type="text"
+          id="id-card"
+          name="id-card"
+          placeholder="ID do cartão"
+          required
+        />
+        <button type="submit">
+          <img src="./src/assets/arrow-down-left.svg" alt="Pesquisar" />
+        </button>
+      </form>
     </header>
   </body>
 </html>

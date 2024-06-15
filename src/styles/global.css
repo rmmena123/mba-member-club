@@ -40,7 +40,13 @@
   --space-lg: 1.25rem;
   --space-xl: 1.5rem;
   --space-2xl: 2rem;
-  --spacec-3xl: 4rem;
+  --space-3xl: 4rem;
+
+  --border-radius-min: 8px;
+  --border-radius-sm: 12px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 20px;
+  --border-radius-full: 999px;
 }
 
 *,
@@ -92,12 +98,12 @@ img {
   --max-width: 350px;
   width: min(var(--max-width), 100% - var(--space-md) * 2);
   margin-inline: auto;
-  border: 1px solid blue;
+  /*border: 1px solid blue; */
 }
 
 @media (width >= 62em) {
   .container {
     --max-width: 912px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
   }
 }
