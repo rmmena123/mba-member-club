@@ -1,0 +1,29 @@
+.user-data {
+  gap: var(--space-base);
+  padding: var(--space-base);
+
+  & .user-profile {
+    position: relative;
+    background: var(--gradient-base);
+    border-radius: var(--border-radius-xs);
+    width: 3.7rem;
+    height: 3.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .user-img {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: var(--border-radius-xs);
+      border: 3px solid var(--base---gray-100);
+      background: url(../assets/profile.png) lightgray 50% / cover no-repeat;
+    }
+  }
+
+  & .user-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-min);
+  }
+}

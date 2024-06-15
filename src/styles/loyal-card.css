@@ -1,0 +1,11 @@
+.loyalt-card-info {
+  flex-direction: column;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+
+  & .card-heading {
+    display: flex;
+    align-items: center;
+    gap: var(--space-base);
+  }
+}
