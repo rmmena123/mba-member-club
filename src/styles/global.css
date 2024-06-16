@@ -82,7 +82,7 @@ body {
 }
 
 main {
-  margin-top: var(--space-lg);
+  margin-block: var(--space-lg);
 
   display: flex;
   align-items: center;
