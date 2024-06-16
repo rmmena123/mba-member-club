@@ -88,6 +88,17 @@ main {
   align-items: center;
   flex-direction: column;
   gap: var(--space-sm);
+
+  @media (min-width: 62em) {
+    display: grid;
+    align-items: start;
+    align-content: stretch;
+    grid-template-columns: 20rem 35.5rem;
+    grid-template-rows: 5.625rem 1fr 7.313rem;
+
+    column-gap: var(--space-xl);
+    row-gap: var(--space-base);
+  }
 }
 
 ul[role="list"] {

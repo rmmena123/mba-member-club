@@ -3,42 +3,65 @@
   padding: var(--space-base) var(--space-lg);
   justify-content: space-between;
 
+  @media (min-width: 62em) {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    padding: var(--space-2xl);
+    height: 7.313rem;
+  }
+
   & .progress-info {
     display: flex;
     flex-direction: column;
     gap: var(--space-min);
-  }
 
-  & .progress-bar {
-    display: flex;
-    align-items: center;
-    gap: var(--space-md);
+    & .progress-remaining {
+      @media (min-width: 62em) {
+        & p {
+          font-size: var(--fs-body---text--md);
+        }
 
-    & progress,
-    & progress::-webkit-progress-bar,
-    & progress::-webkit-progress-value {
-      border-radius: var(--border-radius-full);
-    }
-
-    & progress {
-      width: 6rem;
-      height: 0.5rem;
-
-      @media (min-width: 21.5em) {
-        width: 8rem;
-      }
-
-      @media (min-width: 23.4em) {
-        width: 11rem;
+        & strong {
+          font-size: var(--fs-heading---title--md);
+        }
       }
     }
 
-    & progress::-webkit-progress-bar {
-      background: var(--base---gray-300);
-    }
+    & .progress-bar {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
 
-    & progress::-webkit-progress-value {
-      background: var(--gradient-base);
+      & progress,
+      & progress::-webkit-progress-bar,
+      & progress::-webkit-progress-value {
+        border-radius: var(--border-radius-full);
+      }
+
+      & progress {
+        width: 6rem;
+        height: 0.5rem;
+
+        @media (min-width: 21.5em) {
+          width: 8rem;
+        }
+
+        @media (min-width: 23.4em) {
+          width: 11rem;
+        }
+
+        @media (min-width: 62em) {
+          width: 22rem;
+        }
+      }
+
+      & progress::-webkit-progress-bar {
+        background: var(--base---gray-300);
+      }
+
+      & progress::-webkit-progress-value {
+        background: var(--gradient-base);
+      }
     }
   }
 
@@ -52,5 +75,11 @@
 
     border-radius: var(--border-radius-full);
     background: var(--base---gray-200);
+
+    @media (min-width: 62em) {
+      width: 4.5rem;
+      height: 4.5rem;
+      padding: var(--space-min);
+    }
   }
 }
