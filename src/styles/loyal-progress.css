@@ -80,6 +80,10 @@
       width: 4.5rem;
       height: 4.5rem;
       padding: var(--space-min);
+
+      & img {
+        width: 2.5rem;
+      }
     }
   }
 }

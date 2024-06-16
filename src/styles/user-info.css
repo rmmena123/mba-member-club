@@ -12,10 +12,11 @@
     background: var(--gradient-base);
     border-radius: var(--border-radius-xs);
     width: 3.7rem;
-    height: 3.7rem;
+    height: 3.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-inline: 0.125rem;
 
     & .user-img {
       width: 3.5rem;
