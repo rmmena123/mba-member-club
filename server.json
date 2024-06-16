@@ -4,6 +4,7 @@
       "id": "124-537-835-230",
       "name": "Natália Miranda",
       "clientSince": "18/09/2023",
+      "linkProfileImg": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "appointmentHistory": [
         {
           "date": "29/04/2024",
@@ -38,8 +39,9 @@
     },
     {
       "id": "207-245-699-104",
-      "name": "Capitão Nascimento",
+      "name": "João Jesus",
       "clientSince": "12/04/2023",
+      "linkProfileImg": "https://images.pexels.com/photos/1080213/pexels-photo-1080213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "appointmentHistory": [
         {
           "date": "01/05/2024",
@@ -68,6 +70,7 @@
       "id": "523-114-876-908",
       "name": "Sansão",
       "clientSince": "15/07/2023",
+      "linkProfileImg": "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "appointmentHistory": [
         {
           "date": "22/04/2024",
