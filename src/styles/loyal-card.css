@@ -12,7 +12,6 @@
       display: flex;
       flex-direction: column;
       gap: var(--space-min);
-      width: 10rem;
     }
 
     & .card-id {
@@ -23,14 +22,24 @@
 
       border-radius: var(--border-radius-full, 999px);
       background: var(--base---gray-300);
+
+      & p {
+        width: 6.688rem;
+      }
     }
   }
 
   & .card-points {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--space-sm);
     width: 100%;
+
+    @media (min-width: 22.5em) {
+      grid-template-columns: repeat(5, 1fr);
+    }
 
     & .item-check {
       display: flex;
