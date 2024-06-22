@@ -1,4 +1,5 @@
 const userHistoryList = document.querySelector(".history-cards");
+const userHistoryHeading = document.querySelector(".history-heading .text-xs");
 
 export function showHistory(userInfo) {
   try {
@@ -6,6 +7,7 @@ export function showHistory(userInfo) {
 
     if (userInfoAppointmentHistory?.length > 0) {
       userHistoryList.innerHTML = "";
+      userHistoryHeading.textContent = `${userInfoAppointmentHistory?.length} cortes`;
 
       userInfoAppointmentHistory.map((appointment) => {
         // Creating li element
