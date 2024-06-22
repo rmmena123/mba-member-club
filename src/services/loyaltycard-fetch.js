@@ -4,6 +4,7 @@ export async function loyaltyCardFetch(id) {
   try {
     const response = await fetch(`${apiConfig.baseURL}/clients/${id}`);
     const data = await response.json();
+    console.log(data);
 
     return data;
   } catch (error) {
