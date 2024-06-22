@@ -3,6 +3,7 @@ import { showUserInfo } from "../loyaltycards/showUserInfo.js";
 import { showHistory } from "../loyaltycards/showHistory.js";
 import { showCard } from "../loyaltycards/showCard.js";
 import { showProgress } from "../loyaltycards/showProgress.js";
+import { showFree } from "../loyaltycards/showFree.js";
 
 const form = document.querySelector("form");
 const idCard = document.getElementById("id-card");
@@ -20,6 +21,7 @@ form.onsubmit = async (event) => {
       showHistory(userData);
       showCard(userData);
       showProgress(userData);
+      showFree(userData);
     }
   } catch (error) {
     console.log(error);
