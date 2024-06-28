@@ -36,10 +36,14 @@
       background: var(--base---gray-300);
 
       & p {
-        width: 6.688rem;
+        width: 7.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         @media (min-width: 62em) {
-          width: 7.813rem;
+          width: 8.5rem;
+
           font-size: var(--fs-heading---subtitle--md);
         }
       }

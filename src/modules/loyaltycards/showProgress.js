@@ -5,13 +5,19 @@ export function showProgress(userInfo) {
     ".progress-info .progress-remaining"
   );
 
-  progressRemaining.innerHTML = `
+  if (totalCuts === cutsNeeded) {
+    progressRemaining.innerHTML = `
+      <p class="text-sm">Parabéns! O seu próximo corte é gratuito!</p>
+    `;
+  } else {
+    progressRemaining.innerHTML = `
     <p class="text-sm">
-      <strong class="title-sm">${
-        cutsRemaining >= 1 ? cutsRemaining : "Nenhum"
-      }</strong> ${cutsRemaining > 1 ? "cortes" : "corte"} restantes
+      <strong class="title-sm">${cutsRemaining}</strong> ${
+      cutsRemaining > 1 ? "cortes restantes" : "corte restante"
+    } 
     </p>
   `;
+  }
 
   const progressBar = document.querySelector("progress");
   progressBar.setAttribute("value", `${totalCuts}`);
