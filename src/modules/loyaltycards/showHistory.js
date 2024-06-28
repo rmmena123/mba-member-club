@@ -1,3 +1,5 @@
+import { alertText } from "../../utils/alertText.js";
+
 const userHistoryList = document.querySelector(".history-cards");
 const userHistoryHeading = document.querySelector(".history-heading .text-xs");
 
@@ -48,6 +50,6 @@ export function showHistory(userInfo) {
     }
   } catch (error) {
     console.log(error);
-    alert("Erro ao buscar histórico do usuário");
+    alertText("Erro ao buscar histórico do usuário");
   }
 }

@@ -16,7 +16,7 @@ const ordinalText = {
 };
 
 export function showCard(userInfo) {
-  const { totalCuts, cutsNeeded, cutsRemaining } = userInfo?.loyaltyCard;
+  const { totalCuts, cutsNeeded } = userInfo?.loyaltyCard;
   cardPoints.innerHTML = "";
 
   cardHeading.textContent = `Ao fazer cortes de cabelo, o ${ordinalText[cutsNeeded]} sai de graça!`;

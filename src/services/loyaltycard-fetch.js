@@ -1,3 +1,4 @@
+import { alertText } from "../utils/alertText.js";
 import { apiConfig } from "./api-config.js";
 
 export async function loyaltyCardFetch(id) {
@@ -8,7 +9,7 @@ export async function loyaltyCardFetch(id) {
 
     return data;
   } catch (error) {
-    alert("Cliente não encontrado. Insira um ID válido!");
+    alertText("Cliente não encontrado. Insira um ID válido!");
     console.log(error);
   }
 }

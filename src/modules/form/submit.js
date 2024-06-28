@@ -4,6 +4,7 @@ import { showHistory } from "../loyaltycards/showHistory.js";
 import { showCard } from "../loyaltycards/showCard.js";
 import { showProgress } from "../loyaltycards/showProgress.js";
 import { showFree } from "../loyaltycards/showFree.js";
+import { alertText } from "../../utils/alertText.js";
 
 const form = document.querySelector("form");
 const idCard = document.getElementById("id-card");
@@ -25,6 +26,6 @@ form.onsubmit = async (event) => {
     }
   } catch (error) {
     console.log(error);
-    alert("Não foi possível enviar o formulário");
+    alertText("Não foi possível enviar o formulário");
   }
 };
