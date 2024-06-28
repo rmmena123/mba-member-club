@@ -7,7 +7,10 @@ export function showHistory(userInfo) {
 
     if (userInfoAppointmentHistory?.length > 0) {
       userHistoryList.innerHTML = "";
-      userHistoryHeading.textContent = `${userInfoAppointmentHistory?.length} cortes`;
+      userHistoryHeading.textContent =
+        userInfoAppointmentHistory?.length > 1
+          ? `${userInfoAppointmentHistory?.length} cortes`
+          : `${userInfoAppointmentHistory?.length} corte`;
 
       userInfoAppointmentHistory.map((appointment) => {
         // Creating li element
