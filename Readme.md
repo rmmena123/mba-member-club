@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-O projeto é um site responsivo de cartão fidelidade com o histórico de cortes de cabelo feitos por um clube de membros.
+O projeto foi criado como desafio da primeira etapa do MBA Full-Stack da Rocketseat. É um site responsivo de cartão fidelidade com o histórico de cortes de cabelo feitos por um clube de membros.
 </p>
 
 <p align="center">
